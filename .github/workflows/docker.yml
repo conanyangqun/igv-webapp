@@ -1,7 +1,10 @@
 name: Build and Push to Docker Image.
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
+  push:
+    tags:
+        v*
 
 jobs:
   push_to_registry:
